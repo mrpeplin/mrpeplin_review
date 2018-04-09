@@ -12,6 +12,29 @@ repositories {
   mavenCentral()
 }
 
+// Created to utilize the gradle plugin for eclipse.  Doesn't like layout of this project.
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+            exclude '/main/resources/'
+            exclude '/test/java/'
+        }
+		resources {
+			srcDir 'src/main/resources'
+			include '**/*.properties' 
+			include '**/*.png'
+			include '**/*.gif'
+			include '**/*.jpg'
+			include '**/*.html'
+			include '**/*.js'
+			include '**/*.sh'
+			include '**/*.dat'
+			include '**/*.icc'
+			exclude '**/*.DS_Store'
+        }
+    }
+}
 
 ///////////////////////////////////////////////////////////////////////////
 // JUnit 5 include
