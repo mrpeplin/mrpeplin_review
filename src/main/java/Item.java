@@ -1,1 +1,1 @@
-package main.java;public class Item {        public int key;        //constructor        public Item(int keyValue) {                 key = keyValue;        }        // further components and methods}
+package main.java;// Changed class from Final to non-final.public class Item {        public int key;        //constructor        public Item(int keyValue) {                 key = keyValue;        }        // further components and methods}
